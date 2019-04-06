@@ -193,7 +193,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                                 else if (item.Name == "Account")
                                 {
@@ -210,7 +210,7 @@ namespace Project.SMSSend.CCP
                         return new CCPResponseStatus()
                         {
                             StatusCode = 172002.ToString(),
-                            Message = "无返回"
+                            StatusMsg = "无返回"
                         };
                     }
                 }
@@ -234,7 +234,7 @@ namespace Project.SMSSend.CCP
                         return new CCPResponseStatus()
                         {
                             StatusCode = 172002.ToString(),
-                            Message = "无返回"
+                            StatusMsg = "无返回"
                         };
                     }
                 }
@@ -361,7 +361,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                                 else if (item.Name == "SubAccount")
                                 {
@@ -384,7 +384,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -512,7 +512,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                                 else if (item.Name == "totalCount")
                                 {
@@ -547,7 +547,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -669,7 +669,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                                 else if (item.Name == "SubAccount")
                                 {
@@ -692,7 +692,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -878,7 +878,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -1067,7 +1067,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                                 else if (item.Name == "LandingCall")
                                 {
@@ -1091,7 +1091,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -1258,7 +1258,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                                 else if (item.Name == "VoiceVerify")
                                 {
@@ -1281,7 +1281,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -1405,7 +1405,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                             }
                         }
@@ -1419,7 +1419,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -1556,7 +1556,7 @@ namespace Project.SMSSend.CCP
                                 }
                                 else if (item.Name == "statusMsg")
                                 {
-                                    responseResult.Message = item.InnerText;
+                                    responseResult.StatusMsg = item.InnerText;
                                 }
                                 else
                                 {
@@ -1578,7 +1578,7 @@ namespace Project.SMSSend.CCP
                     return new CCPResponseStatus()
                     {
                         StatusCode = 172002.ToString(),
-                        Message = "无返回"
+                        StatusMsg = "无返回"
                     };
                 }
             }
@@ -1631,7 +1631,7 @@ namespace Project.SMSSend.CCP
                 return new CCPResponseStatus()
                 {
                     StatusCode = statusCode.ToString(),
-                    Message = statusMsg
+                    StatusMsg = statusMsg
                 };
             }
 
@@ -1663,7 +1663,7 @@ namespace Project.SMSSend.CCP
                 return new CCPResponseStatus()
                 {
                     StatusCode = statusCode.ToString(),
-                    Message = statusMsg
+                    StatusMsg = statusMsg
                 };
             }
 
@@ -1705,7 +1705,7 @@ namespace Project.SMSSend.CCP
                 return new CCPResponseStatus()
                 {
                     StatusCode = statusCode.ToString(),
-                    Message = statusMsg
+                    StatusMsg = statusMsg
                 };
             }
 
@@ -1723,7 +1723,7 @@ namespace Project.SMSSend.CCP
                 return new CCPResponseStatus()
                 {
                     StatusCode = 172012.ToString(),
-                    Message = "应用ID为空"
+                    StatusMsg = "应用ID为空"
                 };
             }
 

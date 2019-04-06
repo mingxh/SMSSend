@@ -38,9 +38,9 @@ namespace Project.SMSSend.CCP
 
                     return new CCPSendSmsResult()
                     {
-                        Code = ccpResponseStatus.StatusCode == "000000" ? "OK" : ccpResponseStatus.Message,
-                        Message = ccpResponseStatus.Message,
-                        RequestId = ccpResponseStatus.TemplateSMS.SmsMessageSid
+                        Code = ccpResponseStatus.StatusCode == "000000" ? "OK" : ccpResponseStatus.StatusCode,
+                        Message = ccpResponseStatus.StatusMsg,
+                        RequestId = ccpResponseStatus.TemplateSMS?.SmsMessageSid??""
                     };
 
                 }

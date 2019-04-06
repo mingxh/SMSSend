@@ -17,7 +17,7 @@ namespace Project.SMSSend.CCP.CCPResponse
         /// <summary>
         /// 消息
         /// </summary>
-        public string Message { get; set; } = "成功";
+        public string StatusMsg { get; set; } = "成功";
 
         /// <summary>
         /// 附加数据
