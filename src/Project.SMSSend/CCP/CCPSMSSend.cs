@@ -49,7 +49,7 @@ namespace Project.SMSSend.CCP
                     return new CCPSendSmsResult()
                     {
                         Message = "初始化失败",
-                        Code = "AliServerError",
+                        Code = "CCPServerError",
                         RequestId = string.Empty
                     };
                 }
@@ -59,7 +59,7 @@ namespace Project.SMSSend.CCP
                 return new CCPSendSmsResult()
                 {
                     Message = "运行错误",
-                    Code = "AliServerError",
+                    Code = "CCPClientError",
                     RequestId = string.Empty
                 };
             }
